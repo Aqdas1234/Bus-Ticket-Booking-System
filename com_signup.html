@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>SignUp</title>
+    <link rel="stylesheet" href="assets\styles\style.css">
+
+  <script>
+		var flag= false;
+		
+		function NameCheck()
+		{
+			//var flag = false;
+			if(document.getElementById("fname").value == '')
+			{
+				document.getElementById("NameErr").innerHTML = "Enter name please";
+				flag = false;
+			}else{
+				document.getElementById("NameErr").innerHTML = "";
+				flag= true;
+			}
+			
+			return flag;
+		}
+		function regNoCheck()
+		{
+			if(document.getElementById("regNo").value == '')
+			{
+				document.getElementById("regErr").innerHTML = "Enter RegNo please";
+				flag = false;
+			}else{
+				document.getElementById("regErr").innerHTML = "";
+				flag= true;
+			}
+			return flag;
+		}
+		
+		
+		function emailCheck(){
+		  
+		  if(document.getElementById("email").value == '')
+			{
+				document.getElementById("emailErr").innerHTML = "Enter email please";
+				flag = false;
+				return flag;
+			}else{
+				document.getElementById("emailErr").innerHTML = "";
+				flag= true;
+			}
+		  
+			let mail = document.getElementById("email").value;
+			let at = mail.indexOf("@");
+			let	dot = mail.indexOf(".");
+			
+			if (at> 0 && dot>at+1 && mail.length>dot)
+			{
+				document.getElementById("emailErr").innerHTML = "";
+				flag = true;
+			}else{
+			document.getElementById("emailErr").innerHTML = "invalid";
+			flag = false;}	
+			
+			return flag;
+		}
+		
+		function pwsdCheck(){
+			
+			if (document.getElementById("pwsd").value == document.getElementById("cpwsd").value)
+			{
+				document.getElementById("pwsdErr").innerHTML = '';
+				flag = true;
+			}else{
+			document.getElementById("pwsdErr").innerHTML = "password does not match";
+			flag = false;}
+			return flag;
+		}
+		function psd()
+		{
+			if (document.getElementById("pwsd").value == '')
+			{document.getElementById("psdErr").innerHTML = "Enter password please";
+			flag = false;
+			}else{
+			document.getElementById("psdErr").innerHTML = '';
+			flag = true;
+			}
+			return flag;
+			
+		}
+		function check()
+		{	
+			let flag1 = NameCheck();
+			let flag3 = regNoCheck();
+			let flag4 = emailCheck();
+			let flag5 = psd();
+			let flag6 = pwsdCheck();
+			return flag1&&flag3&&flag4&&flag5&&flag6;
+		}
+	</script>
+</head>
+<body>
+    <div class="main_header header">
+            <div class ="header_name">
+            <a href="index.html"><h2>TRAVELL<span>.</span></h2></a>
+            </div>
+    </div>
+  
+
+
+    <div class="ticketbook_conatainer sign_in_up">
+           
+        <div id="ticketbook_wrapper " class="ticketbook_wrapper sign_in_up_box "  >
+            <div class="sign_in_up_box_header">
+                <h2>Sign Up</h2>
+            </div>
+            <div class="sign_in_up_box_img">
+                <img src="assets\img\sign-up.png" alt="img">
+            </div>
+            
+            
+            
+            <form onsubmit = "return check()" action="Insert_c" method ="post">
+                <h4>Name</h4>
+                <input type="text" id="fname" name="fname" placeholder="name" onblur = "NameCheck()">
+                <span id="NameErr" style= "color:red"></span>
+                <br><br>
+				
+				<h4>RegNO</h4>
+                <input type="text" id="regNo" name="regNo" placeholder="regNo" onblur = "regNoCheck()">
+                <span id = "regErr" style= "color:red"></span>
+                <br><br>
+
+                <h4>Email</h4>
+                <input type="text" id="email" name="email" placeholder="email" onblur = "emailCheck()">
+                <span id = "emailErr" style= "color:red"></span>
+                <br><br>
+
+                <h4>Password</h4>
+                <input type="password" class="pass" id="pwsd" name="pwsd" placeholder="*******" onblur = "psd()">
+                <span id = "psdErr" style= "color:red"></span>
+                <br><br>
+
+                <h4>Confirm Password</h4>
+                <input type="password" class="pass" id="cpwsd" name="cpwsd" placeholder="*******" onblur= "pwsdCheck()">
+                <span id = "pwsdErr" style= "color:red"></span>
+                <br><br>
+                
+                <button type= "submit" class="sbmt_btn" >Submit</button>
+            </form>
+            <br>
+            <a href="com_login.html" class="sign">Having Already Account? LogIn</a>
+        </div>        
+    
+</body>
+</html>

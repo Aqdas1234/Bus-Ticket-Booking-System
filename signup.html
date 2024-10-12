@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>SignUp</title>
+    <link rel="stylesheet" href="assets\styles\style.css">
+
+    <script src="assets\styles\myscript.js"></script>
+</head>
+<body>
+    <div class="main_header header">
+            <div class ="header_name">
+            <a href="index.html"><h2>TRAVELL<span>.</span></h2></a>
+            </div>
+    </div>
+  
+
+
+    <div class="ticketbook_conatainer sign_in_up">
+           
+        <div id="ticketbook_wrapper " class="ticketbook_wrapper sign_in_up_box "  >
+            <div class="sign_in_up_box_header">
+                <h2>Sign Up</h2>
+            </div>
+            <div class="sign_in_up_box_img">
+                <img src="assets\img\sign-up.png" alt="img">
+            </div>
+            
+            
+            
+            <form onsubmit = "return check()" action="Insert_p" method ="post">
+                <h4>Name</h4>
+                <input type="text" id="fname" name="fname" placeholder="name" onblur = "NameCheck()">
+                <span id="NameErr" style= "color:red"></span>
+                <br><br>
+
+                <h4>Email</h4>
+                <input type="text" id="email" name="email" placeholder="email" onblur = "emailCheck()">
+                <span id = "emailErr" style= "color:red"></span>
+                <br><br>
+
+                <h4>Password</h4>
+                <input type="password" class="pass" id="pwsd" name="pwsd" placeholder="*******" onblur = "psd()">
+                <span id = "psdErr" style= "color:red"></span>
+                <br><br>
+
+                <h4>Confirm Password</h4>
+                <input type="password" class="pass" id="cpwsd" name="cpwsd" placeholder="*******" onblur= "pwsdCheck()">
+                <span id = "pwsdErr" style= "color:red"></span>
+                <br><br>
+                
+                <button type= "submit" class="sbmt_btn" >Submit</button>
+            </form>
+            <br>
+            <a href="login.html" class="sign">Having Already Account? LogIn</a>
+        </div>        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Login</title>
+    <link rel="stylesheet" href="assets\styles\style.css">
+
+    <script src="assets\styles\myscript.js"></script>
+</head>
+<body>
+    <div class="main_header header">
+            <div class ="header_name">
+            <a href="index.html"><h2>TRAVELL<span>.</span></h2></a>
+            </div>
+    </div>
+
+
+    <div class="ticketbook_conatainer sign_in_up">
+           
+        <div id="ticketbook_wrapper " class="ticketbook_wrapper sign_in_up_box "  >
+            <div class="sign_in_up_box_header">
+                <h2>Log In</h2>
+            </div>
+            <div class="sign_in_up_box_img">
+                <img src="assets\img\login.png" alt="img">
+            </div>
+
+            <form onsubmit ="return validate()" action="Search_c" method = "post">
+                <h4>Email</h4>
+                <input type="text" id="email1" name="email1" placeholder="email" onblur= "emailValidator()">
+                <span id="emailError" style= "color:red"></span>
+                <br><br>
+                <h4>Password</h4>
+                <input type="password" class="pass" id="pwsd1" name="pwsd1" placeholder="*******" onblur = "pwsdValidator()">
+                <span id="pwsdError" style= "color:red"></span>
+                <br><br>
+                
+                
+
+                <button type="submit" class="sbmt_btn">Log In</button>   
+            </form>
+            <br>
+            <a href="com_signup.html" class="sign">Haven't Already Account? SignUp</a>
+            
+        </div>
+            
+    </div>
+
+</body>

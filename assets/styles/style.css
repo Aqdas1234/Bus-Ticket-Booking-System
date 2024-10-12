@@ -1,0 +1,831 @@
+body{
+    
+    background-color: #eeedea;
+    margin: 0;
+	padding: 0;
+	
+	justify-content: center;
+	align-items: center;
+
+}
+.sbmt_btn{
+	background :#3650e7;
+	color :white;
+	width :50%;
+	padding:10px;
+	font-size:15px;
+	border-radius:20px;
+	cursor:pointer;
+	margin-left:60px;
+	
+}
+
+.header_nav ul
+{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items:center;
+    margin-right: 20px;
+}
+
+.header_nav ul button
+{
+   text-decoration: none;
+   margin: 15px;
+   color: #222222;
+   /* font-family: 'Sono', sans-serif; */
+   font-family: 'Open Sans', sans-serif;
+   background-color:white;
+   font-size: 17px;
+   font-weight: 700;
+   border: hidden;
+   cursor: pointer;
+}
+.header_nav ul a
+{
+   text-decoration: none;
+   margin: 15px;
+   color: #222222;
+   /* font-family: 'Sono', sans-serif; */
+   font-family: 'Open Sans', sans-serif;
+   background-color:white;
+   font-size: 17px;
+   font-weight: 700;
+   border: hidden;
+   cursor: pointer;
+}
+.header_name
+{
+    width: 30%;
+    margin-left: 20px;
+    text-align: center;
+    
+}
+
+.header_name h2 
+{
+    font-family: 'Sono', sans-serif;
+    font-size: 35px;
+    color: #222222;
+}
+
+.header
+{
+    width: 100%;
+    height: 80px;
+    background: white;
+    box-shadow: 0 0 29px 0 rgba(56, 73, 121, 0.12);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+.main_header
+{
+    justify-content:center;
+}
+
+.header_name
+{
+    width: 30%;
+    margin-left: 20px;
+    text-align: center;
+    
+}
+
+
+.header_name h2 span
+{
+    color: #3650e7;
+}
+
+.wrapper
+{
+    /* height: 400px; */
+    width: 600px;
+    padding: 10px;
+    padding-bottom: 30px;
+    background: rgb(233, 241, 247);
+    margin-top: 20px;
+    margin: auto;
+    /* border-radius: 30px; */
+    box-sizing:border-box;
+    box-shadow: 0 0 29px 0 rgba(56, 73, 121, 0.12);
+    position: absolute;
+    top: 40%;
+    left: 50%; 
+    transform: translate(-50% ,-30%);
+}
+
+.wrapper .main_logo div
+{
+    width: 300px;
+    height: 280px;
+}
+
+
+.wrapper .main_logo div img
+{
+    height: 100%;
+    width: 160%;
+    padding-left: 50px; 
+}
+
+
+.wrapper .user_selection
+{
+    text-align: center;
+}
+
+
+.wrapper .user_selection h3
+{
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    color: #3650e7;
+}
+
+.wrapper .user_selection a
+{
+    text-decoration: none;
+     /* border: 1px solid blue;  */
+    display: block;
+    margin: 10px;
+    background: #3650e7;
+    width: 400px;
+    margin: 10px auto ;
+    color: white;
+    padding: 13px;
+    border-radius: 22px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+.wrapper_form{
+    text-align:center;
+}
+
+
+/* SignUp page    */
+
+.sign_in_up>div
+{
+    margin: 10px;
+    padding-top: 0px;
+    /* border-radius: 50px 0px 50px 0px; */
+    overflow: hidden;
+}
+
+.sign_in_up_box_header
+{
+    color: white;
+    background: #3650e7;
+    margin-top: 0px;
+    font-family: 'Sono', sans-serif;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign_in_up_box_header h2
+{
+   margin: 0px;
+}
+
+.sign_in_up_box_img img
+{
+    width: 100px;
+    margin-top: 10px;
+}
+
+
+.ticketbook_conatainer
+{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.ticketbook_wrapper
+{
+    border-radius:  50px;
+    background: white;
+    box-shadow: 0 0 29px 0 rgba(56, 73, 121, 0.12);
+    padding: 20px 0px;
+    /* border-radius: 15px; */
+    width: 45%;
+}
+
+.ticketbook_wrapper>div
+{
+    text-align: center;
+}
+
+
+.ticketbook_wrapper form
+{
+    width: 60%;
+    margin: auto;
+}
+
+.ticketbook_wrapper form h4
+{
+    margin-bottom: 10px;
+}
+
+.pass {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #3650e7;
+}
+
+.ticketbook_wrapper form input[type=text] , .pass
+{
+   width: 100%;
+   height: 30px;
+   outline: none;
+   border: none;
+   border-bottom: 2px solid #3650e7;
+}
+
+.ticketbook_wrapper form input:focus
+{
+   border-bottom: 2px solid #3650e7;
+}
+
+.ticketbook_wrapper  h4{
+    font-family: 'Open Sans', sans-serif;
+    color:#3650e7; 
+    margin-top: 5px;   
+}
+
+
+.ticketbook_wrapper form>a
+{
+    text-decoration: none;
+    padding: 10px 20px ;
+    background: #3650e7;
+    color: white;
+    font-family: 'Sono', sans-serif;
+    width: 50%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.sign
+{
+    
+    font-family: 'Sono', sans-serif;
+    display: block;
+    text-align: center;
+    
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+.passengers_wrapper 
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:center;
+   /* margin-top: 60px; */
+   height: 75vh;
+   align-items: center;
+}
+
+.passengers_wrapper>div
+{
+    height: 200px;
+    width: 22%;
+    background: white;
+    box-shadow: 0 0 29px 0 rgba(56, 73, 121, 0.12);
+    border-radius: 12px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.passengers_wrapper>div a
+{
+    text-decoration: none;
+}
+.passenger_page_div_container
+{
+    text-align: center;
+}
+
+.passenger_page_div_container .passenger_page_img_container
+{
+    margin: auto;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    width: 50px;
+    padding: 20px;
+    border-radius: 100%;
+    border: 2px solid #3650e7;
+}
+
+.passenger_page_div_container .passenger_page_img_container img
+{
+    width: 100%;
+    height: 50px;
+    margin: auto;
+}
+.passenger_page_div_container .passenger_page_img_container img
+{
+    width: 100%;
+    height: 50px;
+    margin: auto;
+}
+
+
+.passenger_page_div_container h1
+{
+    font-family: 'Sono', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 10px;
+    color: #222222;
+    /* color: #3650e7; */
+    margin-top: 0px;
+}
+
+.passenger_data
+{
+    width: 80%;
+}
+
+.passenger_data_wrapper
+{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.passenger_data_box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.passenger_data_box form h2
+{
+    font-family: 'Open Sans', sans-serif;
+    color: #0c2f54;
+    margin: 4px 0px;
+}
+
+.passenger_data_box_right form span
+{
+    font-family: 'Sono', sans-serif;
+    color: #0c2f54;
+}
+
+.left_border
+{
+    border-style: none solid none none;
+    border-color:#3650e7;
+    border-width: 1px;
+}
+.passenger_data_box div
+{
+   width: 50%;
+   margin-top: 10px;
+   text-align: left;
+}
+
+
+
+/* =============> Payment <================ */
+
+.payment
+{
+    width: 90%;
+}
+
+.payment_box_img
+{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment_box
+{
+    border-radius: 15px;
+}
+
+.payment_box form a
+{
+    width: 70%;
+}
+
+/* ==========================> Generate Ticket Page <================ */
+
+.generate_ticket_wrapper
+{
+    width: 50%;;
+}
+
+.generate_ticket
+{
+    border-radius: 0px;
+    border-radius: 20px
+}
+
+.generate_ticket_box>div
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 10px;
+    width: 97%;
+    margin-bottom: 20px;
+}
+
+.generate_ticket_box>div h4 
+{
+   margin: 0px;
+   color: grey;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Sono', sans-serif;
+}
+
+.generate_ticket_box>div h3
+{
+   margin: 0px;
+   font-family: 'Sono', sans-serif;
+   color:#0c2f54;
+}
+
+.generate_ticket_header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generate_ticket_header h2
+{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.generate_ticket_header_img
+{
+    width: 35px;
+    margin-right: 5px;
+}
+
+.generate_ticket_header_img img
+{
+    width: 100%;
+}
+
+.generate_ticket_box
+{
+    padding: 0px 10px;
+    margin: 20px 0px;
+}
+
+.generate_ticket a
+{
+    padding: 10px 10px;
+    width: 20%;
+    margin: auto;
+    background-color: #3650e7;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Sono', sans-serif;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+
+/* ==================> Routes Page <============= */
+
+
+
+
+.routes
+{
+    background: white;
+    box-shadow: 0 0 29px 0 rgba(56, 73, 121, 0.12);
+    padding: 20px 0px;
+    width: 80%;
+    margin: 60px auto;
+}
+
+.routes>div
+{
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
+   margin: auto;
+   margin-top: 20px;
+   background-color: #e4e6e7c0;
+   width: 95%;
+   height: 80px;
+   box-shadow: 0 0 29px 0 rgba(56, 73, 121, 0.12);
+   border-radius: 10px;
+
+}
+.routes>div div
+{
+    color:#0c2f54;
+    font-family: 'Sono', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    width: 250px;
+}
+
+.routes>div div img
+{
+    width: 50%;
+}
+
+
+.routes a
+{
+    text-decoration: none;
+    padding: 10px 15px ;
+    color: #3650e7;
+    font-family: 'Sono', sans-serif;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #3650e7;
+    border-radius: 5px;
+}
+
+.routes a:hover
+{
+    background: #3650e7;
+    color: white;
+    
+}
+
+
+/* ======================> Special Offers <===================== */
+
+
+.off
+{
+    color: #0c2f54;
+    font-family: 'Sono', sans-serif;
+}
+
+.offers>div
+{
+    padding: 0px 10px;
+}
+
+ /*================> Complaints <============  */
+ .complaints
+ {
+    justify-content: center;
+ }
+ .complaints>div
+ {
+    border-radius: 50px;
+ }
+textarea
+{
+    border: 2px solid #3650e7;
+    font-family: 'Sono', sans-serif;
+    margin-bottom: 5px;
+    outline: none;
+    width: 100%;
+}
+
+/* ============> Welcome Page <============= */
+.welcome .welcome_img img
+{
+    width: 50%;
+    margin-top: 20px;
+}
+
+.welcome{
+    text-align: center;
+}
+.welcome p
+{
+    font-family: 'Sono', sans-serif;
+    color: #0c2f54;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* =============> New Company Services page <============ */
+.newCompany_services_wrapper
+{
+    margin-top: 20px;
+}
+
+
+/* ==============> Add Bus Timing Page <============= */
+
+.add_bus_timing
+{
+    justify-content: center;
+    top: 15%;
+    flex-wrap: wrap;
+}
+
+.add_bus_timing a
+{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #3650e7;
+    color: white;
+    font-family: 'Sono', sans-serif;
+    width: 50%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.add_bus_timing>div
+{
+    margin: 10px 0px;
+    box-shadow: none;
+    border-radius: 0px;
+    width: 20%;
+
+}
+
+.add_bus_timing>div form
+{
+    margin-top: 10px;
+}
+
+/* ========> Add Route Page <===== */
+
+.add_route
+{
+    padding: 0px;
+    padding-bottom: 10px;
+    border-radius: 0px 50px 50px 0px;
+    overflow: hidden;
+}
+
+.add_route_wrapper
+{
+    width: 85%;
+}
+
+.add_route_timing>div
+{
+    width: 50%;
+}
+
+
+
+/* ============> Get Payment Method page <========= */
+.get_payment_method>div
+{
+    flex-wrap: wrap;
+    width: 23%;
+}
+
+.get_payment_method>h2
+{
+    font-size: 23px;
+    font-weight: 700;
+    color: #0c2f54;
+    font-family: 'Sono', sans-serif;
+}
+
+.get_payment_method
+{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment_check_box>h4
+{
+    width: 25%;
+    text-align: center;
+    margin: 10px;
+}
+
+.blue_btn a
+{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #3650e7;
+    color: white;
+    font-family: 'Sono', sans-serif;
+    width: 50%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* ==============> Route report page <============== */
+
+.route_report
+{
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.route_report>div
+{
+    border-radius: 0px;
+    box-shadow: none;
+    width: 49%;
+
+}
+
+.route_report_box>div
+{
+    width: 85%;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.route_report_box>div h2
+{
+    color: #3650e7;
+    font-family: 'Sono', sans-serif;
+}
+
+.right_border
+{
+    border-right: 2px solid #3650e7;
+}
+
+.route_report_wrapper
+{
+    width: 100%;
+}
+
+
+.bottom_bdr
+{
+    border-bottom: 2px solid #3650e7;
+}
+
+.cl_grey
+{
+    color:grey ;
+    font-family: 'Sono', sans-serif;
+    margin-left: 15px;
+}
+
+.edit_price>div
+{
+width: 32%;
+}
+
+.buses_report_box>div>div
+{
+    justify-content:space-around;
+}
+
+.business_rules
+{
+    margin-left: 30px;
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	
+	<servlet>
+		
+		<servlet-name>Insert</servlet-name>
+		<servlet-class>Insert_p</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Search</servlet-name>
+		<servlet-class>Search_p</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>Insert</servlet-name>
+		<url-pattern>/Insert_p</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/Search_p</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		
+		<servlet-name>Insert_c</servlet-name>
+		<servlet-class>Insert_c</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Search_c</servlet-name>
+		<servlet-class>Search_c</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>Insert_c</servlet-name>
+		<url-pattern>/Insert_c</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Search_c</servlet-name>
+		<url-pattern>/Search_c</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>addBus</servlet-name>
+		<servlet-class>addBus</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addBus</servlet-name>
+		<url-pattern>/addBus</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>addRoute</servlet-name>
+		<servlet-class>addRoute</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addRoute</servlet-name>
+		<url-pattern>/addRoute</url-pattern>
+	</servlet-mapping>
+	
+
+
+	<servlet>
+		<servlet-name>addTiming</servlet-name>
+		<servlet-class>addTiming</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addTiming</servlet-name>
+		<url-pattern>/addTiming</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>routeCheck</servlet-name>
+		<servlet-class>routeCheck</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>routeCheck</servlet-name>
+		<url-pattern>/routeCheck</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>busCheck</servlet-name>
+		<servlet-class>busCheck</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>busCheck</servlet-name>
+		<url-pattern>/busCheck</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>update</servlet-name>
+		<servlet-class>update</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>update</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ticket</servlet-name>
+		<servlet-class>Ticket</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ticket</servlet-name>
+		<url-pattern>/ticket</url-pattern>
+	</servlet-mapping>
+
+	
+	
+	
+</web-app>
